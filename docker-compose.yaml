@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: lib-password
+      MYSQL_DATABASE: lib-db
+      MYSQL_USER: mysql_user
+      MYSQL_PASSWORD: password-db
+    ports:
+      - "3306:3306"
